@@ -1,5 +1,10 @@
-pragma circom 2.0.2;
+pragma circom 2.0.0;
 
-include "./somethingPlease.circom";
+template Multiplier2() {
+    signal input a;
+    signal input b;
+    signal output c;
+    c <== a*b;
+ }
 
-component main {public [a, b]} = Multiplier2();
+ component main = Multiplier2();
