@@ -12,7 +12,7 @@ Download ptau file from: [list](https://github.com/iden3/snarkjs)
 
 `npx snarkjs groth16 setup build/poseidon.r1cs powersOfTau28_hez_final_09.ptau circuit_0000.zkey`
 
-### Verification Key
+### Verification Key to the proof
 
 `npx snarkjs zkey export verificationkey circuit_0000.zkey verification_key.json`
 
