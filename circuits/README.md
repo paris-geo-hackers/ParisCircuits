@@ -30,7 +30,7 @@ npx snarkjs zkey export verificationkey Hasher_0000.zkey verification_key_hasher
 
 `npx snarkjs zkey export solidityverifier circuit_0000.zkey verifier.sol`
 
-npx snarkjs zkey export solidityverifier Hasher_0000.zkey Fullverifier.sol
+npx snarkjs zkey export solidityverifier Hasher_0000.zkey FullVerifier.sol
 
 ## Further Links
 
