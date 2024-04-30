@@ -68,8 +68,8 @@ module.exports = async function builder(code, options) {
   return wc;
 
   function getMessage() {
-    var message = "";
-    var c = instance.exports.getMessageChar();
+    let message = "";
+    let c = instance.exports.getMessageChar();
     while (c != 0) {
       message += String.fromCharCode(c);
       c = instance.exports.getMessageChar();
@@ -121,7 +121,7 @@ class WitnessCalculator {
     //input is assumed to be a map from signals to arrays of bigints
     this.instance.exports.init(this.sanityCheck || sanityCheck ? 1 : 0);
     const keys = Object.keys(input);
-    var input_counter = 0;
+    let input_counter = 0;
     keys.forEach((k) => {
       const h = fnvHash(k);
       const hMSB = parseInt(h.slice(0, 8), 16);
@@ -224,7 +224,7 @@ class WitnessCalculator {
     //prime number
     this.instance.exports.getRawPrime();
 
-    var pos = 7;
+    let pos = 7;
     for (let j = 0; j < this.n32; j++) {
       buff32[pos + j] = this.instance.exports.readSharedRWMemory(j);
     }
